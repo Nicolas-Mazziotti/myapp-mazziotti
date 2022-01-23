@@ -1,12 +1,12 @@
-// import logo from './logo.svg';
-import './App.css';
-import navBar from './componentes/navBar';
 
-function App() {
+import './App.css';
+import NavBar from './componentes/navBar';
+
+const App = () => {
   return (
-      <>
-      <navBar/> 
-      </>
+    <>
+    <NavBar />
+    </>     
   );
 }
 
