@@ -1,3 +1,4 @@
+import './CardComponent.css'
 import * as React from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -5,9 +6,11 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 
+//imagenes
+
 const CardComponent = ({modelo, precio, img}) => {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 345 }} >
       <CardActionArea>
         <CardMedia
           component="img"
@@ -15,7 +18,7 @@ const CardComponent = ({modelo, precio, img}) => {
           image= {img}
           alt="green iguana"
         />
-        <CardContent>
+        <CardContent className='Cards'>
           <Typography gutterBottom variant="h5" component="div">
             {modelo}
           </Typography>
