@@ -10,7 +10,10 @@ import Header from './components/Header/Header'
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import CardComponent from './components/CardComponent/CardComponent'
 
+
 import image1 from '../src/components/img/redmi-note9t.png'
+import image2 from '../src/components/img/redmi-note10.png'
+import image3 from '../src/components/img/redmi-note10.png'
 
 // inicio con un componente funcional
 
@@ -19,10 +22,9 @@ import image1 from '../src/components/img/redmi-note9t.png'
       <div className ='App'>      
       <NavBar />
       <Header />
-      <ItemListContainer 
-      greetings= "Hola Mundo"
+      <ItemListContainer greetings= "Xi Celulares"
        />
-      <div className ='CardComponent'>
+      <div className ='container-fluid CardComponent'>
         <CardComponent  
         modelo= ' Xiaomi RedMi Note 9t'
         precio = 'usd 250'
@@ -31,12 +33,12 @@ import image1 from '../src/components/img/redmi-note9t.png'
         <CardComponent
         modelo= ' Xiaomi RedMi Note 10'
         precio = 'usd 300'
-        img = './components/img/redmi-note9t.png' 
+        img = {image2} 
         />
         <CardComponent
         modelo= ' Xiaomi RedMi Note 10s'
         precio = 'usd 320'
-        img = './components/img/redmi-note9t.png' 
+        img = {image3} 
         />
         </div>  
       </div>

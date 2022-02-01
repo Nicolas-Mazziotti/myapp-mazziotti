@@ -1,33 +1,28 @@
 import './CardComponent.css'
-import * as React from 'react';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
+import ItemCount from '../ItemCount/ItemCount';
+// import React from 'react';
 
-//imagenes
 
-const CardComponent = ({modelo, precio, img}) => {
+
+//props
+const CardComponent = ({ modelo, precio, img }) => {
   return (
-    <Card sx={{ maxWidth: 345 }} >
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          height="140"
-          image= {img}
-          alt="green iguana"
-        />
-        <CardContent className='Cards'>
-          <Typography gutterBottom variant="h5" component="div">
-            {modelo}
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            {precio}
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-    </Card>
+    <div className='row'>
+      <div className="card ">
+        <img src={img}
+          className="card-img-top" alt="..." />
+        <div className="card-body">
+          <h5 className="card-title">{modelo}</h5>
+          <p className="card-text">{precio}</p>
+          <a href="#" className="btn btn-primary">Agragar al carrito</a>
+          <ItemCount/>
+          
+        </div>
+      </div>
+    </div>
+
+
+
   );
 }
 
