@@ -15,7 +15,8 @@ const CardComponent = ({ modelo, precio, img }) => {
           <h5 className="card-title">{modelo}</h5>
           <p className="card-text">{precio}</p>
           <a href="#" className="btn btn-primary">Agragar al carrito</a>
-          <ItemCount/>
+          <ItemCount
+          />
           
         </div>
       </div>

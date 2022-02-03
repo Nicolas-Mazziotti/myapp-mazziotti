@@ -11,6 +11,8 @@ import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import CardComponent from './components/CardComponent/CardComponent'
 
 
+
+
 import image1 from '../src/components/img/redmi-note9t.png'
 import image2 from '../src/components/img/redmi-note10.png'
 import image3 from '../src/components/img/redmi-note10.png'
@@ -26,7 +28,7 @@ import image3 from '../src/components/img/redmi-note10.png'
        />
       <div className ='container-fluid CardComponent'>
         <CardComponent  
-        modelo= ' Xiaomi RedMi Note 9t'
+        modelo= ' Xiaomi RedMi Note 9'
         precio = 'usd 250'
         img = {image1} 
         />
