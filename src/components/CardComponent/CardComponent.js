@@ -6,6 +6,11 @@ import ItemCount from '../ItemCount/ItemCount';
 
 //props
 const CardComponent = ({ modelo, precio, img }) => {
+   
+  function AddtoCart () {
+    console.log("Se agrego al carrito")
+  }
+
   return (
     <div className='row'>
       <div className="card ">
@@ -14,8 +19,11 @@ const CardComponent = ({ modelo, precio, img }) => {
         <div className="card-body">
           <h5 className="card-title">{modelo}</h5>
           <p className="card-text">{precio}</p>
-          <a href="#" className="btn btn-primary">Agragar al carrito</a>
           <ItemCount
+          stock = {5}
+          initial = {1}
+          onAdd = {AddtoCart}
+
           />
           
         </div>

@@ -13,9 +13,9 @@ import CardComponent from './components/CardComponent/CardComponent'
 
 
 
-import image1 from '../src/components/img/redmi-note9t.png'
-import image2 from '../src/components/img/redmi-note10.png'
-import image3 from '../src/components/img/redmi-note10.png'
+import image1 from './assets/redmi-note9t.png'
+import image2 from './assets/redmi-note10.png'
+import image3 from './assets/redmi-note10.png'
 
 // inicio con un componente funcional
 

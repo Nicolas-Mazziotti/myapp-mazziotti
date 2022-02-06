@@ -10,10 +10,11 @@ const Item = ({producto}) => {
           <div className="card-body">
             <h5 className="card-title">{producto.modelo}</h5>
             <p className="card-text">{producto.precio}</p>
-            <a href="#" className="btn btn-primary">Agragar al carrito</a>           
+            <a href="#" className="btn btn-primary">Agregar al carrito</a>           
           </div>
         </div>
       </div>
     )
 }
+
 export default Item

@@ -1,5 +1,5 @@
 import './NavBar.css';
-import icono_index from '../img/icono_index.png';
+import icono_index from '../../assets/icono_index.png';
 import CartWidget from '../CartWidget/CartWidget';
 const NavBar = () => {
     return (

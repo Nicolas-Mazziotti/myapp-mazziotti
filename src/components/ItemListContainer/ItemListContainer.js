@@ -6,7 +6,7 @@ const ItemListContainer = ({greetings}) => {
 //productos= nombre de la variable setProductos= metodo modificadora de variable
 //proudctos se incia dentro de un []
 const [productos, setProductos] = useState ([])
-
+console.log(tienda)
 useEffect (() => {
     //paso los productos a promiseProductos
     const promiseProductos = new Promise ((resolve, reject) =>{
@@ -22,8 +22,9 @@ useEffect (() => {
     .catch((error) => {
         console.log(error)
     })
-    console.log(productos)
+    
 },[]);
+console.log(productos + "Productos despues de useEffect")
 
 
     return (
