@@ -6,8 +6,8 @@ const NavBar = () => {
        <nav className="navBar">
            <img src={icono_index} alt='icono celular' />
         <ul>  
-            <a href='#'><li>Home</li></a>
-            <a href='#'><li>Productos</li></a>
+            <a href='/'><li>Home</li></a>
+            <a href='/products'><li>Productos</li></a>
             <a href='#'><li>Nosotros</li></a>
             <a href='#'><li>Contacto</li></a>
             <CartWidget/>

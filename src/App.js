@@ -8,41 +8,31 @@ import './components/CardComponent/CardComponent.css'
 import NavBar from '../src/components/navBar/NavBar'
 import Header from './components/Header/Header'
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import CardComponent from './components/CardComponent/CardComponent'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Products from './components/Products/Products';
 
 
 
 
-import image1 from './assets/redmi-note9t.png'
-import image2 from './assets/redmi-note10.png'
-import image3 from './assets/redmi-note10.png'
+
 
 // inicio con un componente funcional
 
   const App = () => {
     return (
-      <div className ='App'>      
-      <NavBar />
-      <Header />
-      <ItemListContainer greetings= "Xi Celulares"
-       />
-      <div className ='container-fluid CardComponent'>
-        <CardComponent  
-        modelo= ' Xiaomi RedMi Note 9'
-        precio = 'usd 250'
-        img = {image1} 
-        />
-        <CardComponent
-        modelo= ' Xiaomi RedMi Note 10'
-        precio = 'usd 300'
-        img = {image2} 
-        />
-        <CardComponent
-        modelo= ' Xiaomi RedMi Note 10s'
-        precio = 'usd 320'
-        img = {image3} 
-        />
-        </div>  
+      <div className ='App'> 
+      <BrowserRouter >  
+      <NavBar />    
+      <Routes>
+        <Route path='products' element= {<Products/>}/>
+ 
+       </Routes>
+       <ItemDetailContainer/>
+       <Header />
+      <ItemListContainer greetings= "Xi Celulares"/>
+      </BrowserRouter>
       </div>
  
     );

@@ -1,0 +1,10 @@
+.card-api{
+    margin: 2rem;
+    width: 300px;
+
+}
+
+.card-api img{
+    height: 50vh;
+    width: 100%;
+}

@@ -1,0 +1,17 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row{
+    margin: 2rem;
+}
+
+.card{
+    border: solid 1px;
+    width: 300px;
+    padding: 2rem;
+    display: flex;
+}
+
