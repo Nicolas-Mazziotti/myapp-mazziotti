@@ -9,18 +9,18 @@
     background-color: black;
     color: white;
 }
-ul {
+nav ul {
     display: flex;
     flex-direction:row;
     justify-content:space-evenly;
     align-items: center;
     margin-right: 200px;
 }
-ul li {
+nav ul a {
     padding: 10px;
     list-style: none;
 }
-ul li:hover{
+ul a:hover{
     background-color: white;
     border-radius: 5px;
     color: black;

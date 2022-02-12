@@ -5,13 +5,18 @@ import './components/CardComponent/CardComponent.css'
 
 
 //Components
-import NavBar from '../src/components/navBar/NavBar'
+import NavBar from './components/NavBar/NavBar'
 import Header from './components/Header/Header'
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import CardComponent from './components/CardComponent/CardComponent'
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Products from './components/Products/Products';
+//Routing y Navegacion
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+//Views
+import Home from './components/Views/Home'
+import Productos from './components/Views/Productos'
+import Nosotros from './components/Views/Nosotros'
+import Contacto from './components/Views/Contacto'
 
 
 
@@ -22,21 +27,18 @@ import Products from './components/Products/Products';
 
   const App = () => {
     return (
+      <Router >
       <div className ='App'> 
-      <BrowserRouter >  
       <NavBar />    
       <Routes>
-        <Route path='products' element= {<Products/>}/>
- 
-       </Routes>
-       <ItemDetailContainer/>
-       <Header />
-      <ItemListContainer greetings= "Xi Celulares"/>
-      </BrowserRouter>
+        <Route path='/' element= {<Home/>}/>
+        <Route path='/productos' element= {<Productos/>}/>
+        <Route path='/nosotros' element= {<Nosotros/>}/>
+        <Route path='/contacto' element= {<Contacto/>}/>
+      </Routes>
       </div>
- 
+      </Router>
     );
   }
-
 
 export default App;

@@ -6,8 +6,8 @@ import Item from '../Item/Item'
 
 const ItemList = ({productos}) => {
     return (
-        <div>
-        <div className='container-fluid card-container'>
+        
+        <div className=' card-container'>
             {
                 productos.map((producto) =>(
                     //cuando uso map el elemento lo identifico con key (unico)
@@ -15,7 +15,6 @@ const ItemList = ({productos}) => {
                     <Item key={producto.id} producto= {producto}></Item>
                 ))
             }
-        </div>
         </div>
     )
 }
