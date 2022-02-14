@@ -1,8 +1,10 @@
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 
-
-const CartWidget = () => {
+const CartWidget = ({}) => {
     return (
-        <button>🛒</button>
+        <div>
+            <AddShoppingCartIcon/>
+        </div>
     )
 
 }

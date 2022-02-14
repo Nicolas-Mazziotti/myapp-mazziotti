@@ -1,10 +1,10 @@
 import ItemListContainer from "../ItemListContainer/ItemListContainer"
 
-const Productos = () => {
+const Celulares = () => {
     return (
         <div>
             <ItemListContainer/>
         </div>
     )
 }
-export default Productos
+export default Celulares

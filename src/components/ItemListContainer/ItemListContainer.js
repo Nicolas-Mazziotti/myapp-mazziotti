@@ -1,8 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import tienda from '../../json/json';
 import ItemList from '../ItemList/ItemList'
-const ItemListContainer = ({greetings}) => {
 
+
+const ItemListContainer = ({greetings}) => {
 //productos= nombre de la variable setProductos= metodo modificadora de variable
 //proudctos se incia dentro de un []
 const [productos, setProductos] = useState ([])
@@ -28,11 +29,12 @@ console.log(productos + "Productos despues de useEffect")
 
 
     return (
-        <div>
+        <div>        
         <h1> {greetings} </h1>
         <ItemList 
-        productos = {productos}></ItemList>
+        productos = {productos}></ItemList>       
         </div>
+        
     )
 }
 

@@ -1,22 +1,41 @@
 import React from 'react'
 import './ItemList.css'
 import Item from '../Item/Item'
+import { Link } from 'react-router-dom'
 
 //Uso componente ItemList solo para mapear los el array de productos
 
-const ItemList = ({productos}) => {
+// const ItemList = ({productos}) => {
+//     return (
+
+//         <div className=' card-container'>
+//             {
+//                 productos.map((producto) => {
+//                     return (
+//                     //cuando uso map el elemento lo identifico con key (unico)
+//                     //le paso a item los productos
+//                    <Item key={producto.id} producto= {producto}></Item>
+
+//                 })
+//             }
+//         <
+//     )
+// }
+
+const ItemList = ({ productos }) => {
     return (
-        
         <div className=' card-container'>
-            {
-                productos.map((producto) =>(
-                    //cuando uso map el elemento lo identifico con key (unico)
-                    //le paso a item los productos
-                    <Item key={producto.id} producto= {producto}></Item>
-                ))
-            }
+            {productos.map((producto) => {
+                return (
+                    <div>
+                        <Link to={`/celulares/detail ${producto.id}`}>
+                            <Item key={producto.id} producto={producto}></Item>
+                        </Link>
+                    </div>
+                )
+            })}
+
         </div>
     )
 }
-
 export default ItemList;

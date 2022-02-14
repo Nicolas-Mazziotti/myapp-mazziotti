@@ -1,18 +1,15 @@
 
 import './App.css';
-
-
-
 //Components
 import NavBar from './components/NavBar/NavBar'
-
 //Routing y Navegacion
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 //Views
 import Home from './components/Views/Home'
-import Productos from './components/Views/Productos'
-import Nosotros from './components/Views/Nosotros'
+import Celulares from './components/Views/Celulares'
+import Accesorios from './components/Views/Accesorios';
 import Contacto from './components/Views/Contacto'
+import CelularDetail from './components/Views/CelularDetail/CelularDetail';
 
 
 // inicio con un componente funcional
@@ -24,9 +21,10 @@ import Contacto from './components/Views/Contacto'
       <NavBar />    
       <Routes>
         <Route path='/' element= {<Home/>}/>
-        <Route path='/productos' element= {<Productos/>}/>
-        <Route path='/nosotros' element= {<Nosotros/>}/>
+        <Route path='/celulares' element= {<Celulares/>}/>
+        <Route path='/accesorios' element= {<Accesorios/>}/>
         <Route path='/contacto' element= {<Contacto/>}/>
+        <Route path='/celulares/detail/:id' element= {<CelularDetail/>}/>
       </Routes>
       </div>
       </Router>
