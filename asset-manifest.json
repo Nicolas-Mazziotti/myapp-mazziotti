@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/myapp-mazziotti/static/css/main.c4b68705.css",
+    "main.js": "/myapp-mazziotti/static/js/main.41fa6605.js",
+    "static/js/787.79217b37.chunk.js": "/myapp-mazziotti/static/js/787.79217b37.chunk.js",
+    "static/media/hero_section.jpg": "/myapp-mazziotti/static/media/hero_section.0ee3b13ef7e4d416d72c.jpg",
+    "index.html": "/myapp-mazziotti/index.html",
+    "main.c4b68705.css.map": "/myapp-mazziotti/static/css/main.c4b68705.css.map",
+    "main.41fa6605.js.map": "/myapp-mazziotti/static/js/main.41fa6605.js.map",
+    "787.79217b37.chunk.js.map": "/myapp-mazziotti/static/js/787.79217b37.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c4b68705.css",
+    "static/js/main.41fa6605.js"
+  ]
+}
