@@ -26,9 +26,10 @@ const ItemList = ({ productos }) => {
     return (
         <div className=' card-container'>
             {productos.map((producto) => {
+                console.log("Productos en map", producto)
                 return (
                     <div>
-                        <Link to={`/celulares/detail ${producto.id}`}>
+                        <Link to={`/celulares/detail/${producto.id}`}>
                             <Item key={producto.id} producto={producto}></Item>
                         </Link>
                     </div>

@@ -3,7 +3,7 @@ import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 const CartWidget = ({}) => {
     return (
         <div>
-            <AddShoppingCartIcon/>
+           <button className='btn btn-dark'><AddShoppingCartIcon/></button> 
         </div>
     )
 
