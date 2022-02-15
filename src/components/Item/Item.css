@@ -15,3 +15,8 @@
     display: flex;
 }
 
+.card .card-cuerpo{
+    text-decoration: none;
+    list-style: none;
+}
+

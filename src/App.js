@@ -5,7 +5,7 @@ import NavBar from './components/NavBar/NavBar'
 //Routing y Navegacion
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 //Views
-import Home from './components/Views/Home'
+import Home from '../src/components/Views/Home/Home'
 import Celulares from './components/Views/Celulares'
 import Accesorios from './components/Views/Accesorios';
 import Contacto from './components/Views/Contacto'
