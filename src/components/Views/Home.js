@@ -8,7 +8,6 @@ const Home = () =>{
     return (
         <div>
         <Header/>
-       <ItemDetailContainer/>
        <ItemListContainer/>
         </div>
         
