@@ -1,10 +1,17 @@
 import React from 'react'
 import CelularDetail from '../Views/CelularDetail/CelularDetail'
+import { useParams } from "react-router-dom";
+import tienda from '../../json/json';
+
 
 const ItemDetailContainer = () => {
+  const params = useParams()
+  const celularElegido = tienda.find(celular => celular.id === params.id)
+
   return (
+    //fragment
     <div>
-        <CelularDetail/>
+        <CelularDetail celular={celularElegido}/>
     </div>
   )
 }

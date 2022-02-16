@@ -5,19 +5,16 @@ import tienda from "../../../json/json";
 //hook para obtener id que recibe el componente Rout de forma dinamica
 import { useParams } from "react-router-dom";
 
-const CelularDetail = () => {
+const CelularDetail = ({celular}) => {
 
-  const id = useParams()
-  console.log(id)
-  const celulares = tienda.find(celular => celular.id === id.id)
-  console.log(celulares)          
+       
 
   return (
     <div>
-      <h1>{celulares.modelo}</h1>
-      <img src={celulares.img} alt={celulares.modelo}/>
+      <h1>{celular.modelo}</h1>
+      <img src={celular.img} alt={celular.modelo}/>
       <h2>Descripción</h2>
-      <p>{celulares.descripcion}</p>
+      <p>{celular.descripcion}</p>
     </div>
   )
 }
