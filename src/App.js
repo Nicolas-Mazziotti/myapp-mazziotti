@@ -10,6 +10,7 @@ import Celulares from './components/Views/Celulares'
 import Accesorios from './components/Views/Accesorios';
 import Contacto from './components/Views/Contacto'
 import CelularDetail from './components/Views/CelularDetail/CelularDetail';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 
 
 // inicio con un componente funcional
@@ -24,7 +25,7 @@ import CelularDetail from './components/Views/CelularDetail/CelularDetail';
         <Route path='/celulares' element= {<Celulares/>}/>
         <Route path='/accesorios' element= {<Accesorios/>}/>
         <Route path='/contacto' element= {<Contacto/>}/>
-        <Route path='/celulares/detail/:id' element= {<CelularDetail/>}/>
+        <Route path='/celulares/detail/:id' element= {<ItemDetailContainer/>}/>
       </Routes>
       </div>
       </Router>

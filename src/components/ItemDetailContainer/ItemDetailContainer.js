@@ -1,3 +1,33 @@
+import React from 'react'
+import CelularDetail from '../Views/CelularDetail/CelularDetail'
+
+const ItemDetailContainer = () => {
+  return (
+    <div>
+        <CelularDetail/>
+    </div>
+  )
+}
+
+export default ItemDetailContainer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// API EXTERNA
 // import React, { useEffect, useState } from "react";
 // import './ItemDetailContainer.css'
 // import ItemDetail from "../ItemDetail/ItemDetail";
