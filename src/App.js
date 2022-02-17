@@ -9,7 +9,6 @@ import Home from '../src/components/Views/Home/Home'
 import Celulares from './components/Views/Celulares'
 import Accesorios from './components/Views/Accesorios';
 import Contacto from './components/Views/Contacto'
-import CelularDetail from './components/Views/CelularDetail/CelularDetail';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 
 

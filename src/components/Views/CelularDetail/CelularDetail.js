@@ -1,21 +1,33 @@
-import React from "react";
-import tienda from "../../../json/json";
+import React, { useState } from "react";
+import ItemCount from "../../ItemCount/ItemCount";
 
 
-//hook para obtener id que recibe el componente Rout de forma dinamica
-import { useParams } from "react-router-dom";
 
-const CelularDetail = ({celular}) => {
 
-       
+//Componente
+
+const CelularDetail = ({ celular }) => {
+ const [cantidad, setCantidad] = useState (0)
+ console.log(cantidad)
+
+  const onAdd = (c) =>{
+    setCantidad(c)
+    console.log(cantidad)
+  }
+
+
 
   return (
+    
     <div>
       <h1>{celular.modelo}</h1>
-      <img src={celular.img} alt={celular.modelo}/>
+      <img src={celular.img} alt={celular.modelo} />
       <h2>Descripción</h2>
       <p>{celular.descripcion}</p>
+      {cantidad == 0 ? 
+      <ItemCount stock={5} initial={1} onAdd={onAdd}/> : <h1>Ir al Carrito</h1>}
     </div>
+    
   )
 }
 

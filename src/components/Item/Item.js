@@ -4,9 +4,9 @@ import ItemCount from "../ItemCount/ItemCount";
 import './Item.css'
 
 const Item = ({ producto }) => {
-  function AddtoCart() {
-    console.log("Se agrego al carrito")
-  }
+  // function AddtoCart() {
+  //   console.log("Se agrego al carrito")
+  // }
 
   return (
   
@@ -17,11 +17,11 @@ const Item = ({ producto }) => {
           <div className="card-cuerpo">
             <h5 className="card-titulo">{producto.modelo}</h5>
             <p className="card-precio">usd {producto.precio}</p>
-            <ItemCount
+            {/* <ItemCount
               stock={5}
               initial= {1}
               onAdd={AddtoCart}
-            />
+            /> */}
           </div>
         </div>
       </div>

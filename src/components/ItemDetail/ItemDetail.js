@@ -1,16 +1,16 @@
-import React from "react"
-import './ItemDetail.css'
+// import React from "react"
+// import './ItemDetail.css'
 
 
-const ItemDetail = ({data}) => {
+// const ItemDetail = ({data}) => {
     
-    return (
-        <div className="card-api">
-        <h1> {data.title} </h1>
-        <img src={data.hdurl} alt='estrellas'/>
-        <p>{data.explanation}</p>
+//     return (
+//         <div className="card-api">
+//         <h1> {data.title} </h1>
+//         <img src={data.hdurl} alt='estrellas'/>
+//         <p>{data.explanation}</p>
         
-        </div>
-    )
-}
-export default ItemDetail
+//         </div>
+//     )
+// }
+// export default ItemDetail
