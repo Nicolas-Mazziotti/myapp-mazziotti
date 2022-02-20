@@ -24,19 +24,17 @@ import { Link } from 'react-router-dom'
 
 const ItemList = ({ productos }) => {
     return (
-        <div className=' card-container'>
-            {productos.map((producto) => {
-                
-                return (
-                    <div>
-                        <Link to={`/celulares/detail/${producto.id}`}>
-                            <Item key={producto.id} producto={producto}></Item>
-                        </Link>
-                    </div>
-                )
-            })}
-
-        </div>
+        <div className='container'>
+                {productos.map((producto) => {
+                    return (
+                        <div>
+                            <Link to={`/celulares/detail/${producto.id}`}>
+                                <Item key={producto.id} producto={producto}></Item>
+                            </Link>
+                        </div>
+                    )
+                })}
+            </div>
     )
 }
 export default ItemList;

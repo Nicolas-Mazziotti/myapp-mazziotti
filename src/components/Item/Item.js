@@ -10,8 +10,8 @@ const Item = ({ producto }) => {
 
   return (
   
-    <div className='container '>
-      <div className= 'row '>
+    // <div className='container '>
+    //   <div className= 'row '>
         <div className="card ">
           <img src={producto.img} className="carta-imagen" alt={producto.modelo} />
           <div className="card-cuerpo">
@@ -24,8 +24,8 @@ const Item = ({ producto }) => {
             /> */}
           </div>
         </div>
-      </div>
-    </div>
+    //   </div>
+    // </div>
   )
 }
 

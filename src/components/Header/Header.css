@@ -12,3 +12,9 @@
     height: 80vh;
     width: 100%;
 }
+
+.Header h1 {
+    color: white;
+    align-items: center;
+    margin: 5rem;
+}

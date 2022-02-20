@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ItemCount from "../../ItemCount/ItemCount";
-
+import Carrito from '../Carrito/Carrito'
+import { Link } from "react-router-dom";
 
 
 
@@ -25,7 +26,7 @@ const CelularDetail = ({ celular }) => {
       <h2>Descripción</h2>
       <p>{celular.descripcion}</p>
       {cantidad == 0 ? 
-      <ItemCount stock={5} initial={1} onAdd={onAdd}/> : <h1>Ir al Carrito</h1>}
+      <ItemCount stock={5} initial={1} onAdd={onAdd}/> : <Link to='/carrito'><button className="btn btn-primary">Carrito</button></Link>}
     </div>
     
   )

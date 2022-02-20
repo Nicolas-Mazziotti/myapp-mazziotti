@@ -6,10 +6,11 @@ import NavBar from './components/NavBar/NavBar'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 //Views
 import Home from '../src/components/Views/Home/Home'
-import Celulares from './components/Views/Celulares'
-import Accesorios from './components/Views/Accesorios';
-import Contacto from './components/Views/Contacto'
+import Celulares from './components/Views/Celulares/Celulares';
+import Accesorios from './components/Views/Accesorios/Accesorios';
+import Contacto from './components/Views/Contacto/Contacto';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+import Carrito from './components/Views/Carrito/Carrito';
 
 
 // inicio con un componente funcional
@@ -25,6 +26,7 @@ import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailCont
         <Route path='/accesorios' element= {<Accesorios/>}/>
         <Route path='/contacto' element= {<Contacto/>}/>
         <Route path='/celulares/detail/:id' element= {<ItemDetailContainer/>}/>
+        <Route path='/carrito' element={<Carrito/>}/>
       </Routes>
       </div>
       </Router>

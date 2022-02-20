@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import CelularDetail from '../Views/CelularDetail/CelularDetail'
 //hook para obtener id que recibe el componente Rout de forma dinamica
 import { useParams } from "react-router-dom";
@@ -6,15 +6,17 @@ import tienda from '../../json/json';
 
 
 
+
 const ItemDetailContainer = () => {
   const params = useParams()
   const celularElegido = tienda.find(celular => celular.id === params.id)
 
+
   return (
     //fragment en lugar del div
-    <div>
+    
         <CelularDetail celular={celularElegido}/>
-    </div>
+    
   )
 }
 

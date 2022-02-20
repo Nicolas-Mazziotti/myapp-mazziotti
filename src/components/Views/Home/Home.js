@@ -2,15 +2,18 @@ import React from "react"
 import Header from "../../Header/Header"
 import './Home.css'
 import ItemListContainer from "../../ItemListContainer/ItemListContainer"
+import { Fragment } from "react"
 
 
 const Home = () =>{
     
     return (
-        <div className="body">
+        <Fragment>
             <Header/>
             <ItemListContainer/>
-        </div>
+            </Fragment>
+       
+        
         
     )
 }
