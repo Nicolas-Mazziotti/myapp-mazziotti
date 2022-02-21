@@ -3,6 +3,7 @@ import Header from "../../Header/Header"
 import './Home.css'
 import ItemListContainer from "../../ItemListContainer/ItemListContainer"
 import { Fragment } from "react"
+import tienda from "../../../json/json"
 
 
 const Home = () =>{
@@ -10,7 +11,7 @@ const Home = () =>{
     return (
         <Fragment>
             <Header/>
-            <ItemListContainer/>
+            <ItemListContainer celulares= {tienda}/>
             </Fragment>
        
         
