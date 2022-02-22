@@ -1,7 +1,9 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import ItemCount from "../../ItemCount/ItemCount";
-import Carrito from '../Carrito/Carrito'
 import { Link } from "react-router-dom";
+import { CartContext } from "../../../context/CartContext";
+
+
 
 
 
@@ -10,11 +12,14 @@ import { Link } from "react-router-dom";
 const CelularDetail = ({ celular }) => {
  const [cantidad, setCantidad] = useState (0)
  console.log(cantidad)
+ //agrego funcion desde el context
+ const {addItem, item} = useContext(CartContext)
 
-  const onAdd = (c) =>{
-    setCantidad(c)
-    console.log(cantidad)
-  }
+
+  // const onAdd = (c) =>{
+  //   setCantidad(c)
+  //   console.log(cantidad)
+  // }
 
 
 
@@ -25,8 +30,10 @@ const CelularDetail = ({ celular }) => {
       <img src={celular.img} alt={celular.modelo} />
       <h2>Descripción</h2>
       <p>{celular.descripcion}</p>
+      <p> Precio en USD: {celular.precio}</p>
       {cantidad == 0 ? 
-      <ItemCount stock={5} initial={1} onAdd={onAdd}/> : <Link to='/carrito'><button className="btn btn-primary">Carrito</button></Link>}
+      <ItemCount item ={item} stock={5} initial={1} addItem={addItem}/> : <div> Añadido </div>}
+      <Link to ='/carrito'> Finalizar Compra </Link>
     </div>
     
   )

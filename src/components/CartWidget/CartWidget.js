@@ -1,9 +1,9 @@
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 
-const CartWidget = ({handleClick}) => {
+const CartWidget = () => {
     return (
         <div>
-           <button onClick={handleClick} className='btn btn-dark'><AddShoppingCartIcon/></button> 
+           <button className='btn btn-dark'><AddShoppingCartIcon/></button> 
         </div>
     )
 
