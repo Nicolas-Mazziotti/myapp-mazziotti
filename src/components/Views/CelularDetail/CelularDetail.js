@@ -13,7 +13,7 @@ const CelularDetail = ({ celular }) => {
  const [cantidad, setCantidad] = useState (0)
  console.log(cantidad)
  //agrego funcion desde el context
- const {addItem, item} = useContext(CartContext)
+ const {items, addItem} = useContext(CartContext)
 
 
   // const onAdd = (c) =>{
@@ -32,7 +32,7 @@ const CelularDetail = ({ celular }) => {
       <p>{celular.descripcion}</p>
       <p> Precio en USD: {celular.precio}</p>
       {cantidad == 0 ? 
-      <ItemCount item ={item} stock={5} initial={1} addItem={addItem}/> : <div> Añadido </div>}
+      <ItemCount item ={items} stock={5} initial={1} addItem= {addItem}/> : <div> Añadido </div>}
       <Link to ='/carrito'> Finalizar Compra </Link>
     </div>
     

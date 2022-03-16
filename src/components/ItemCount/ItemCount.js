@@ -1,5 +1,6 @@
-import React from "react"
-const ItemCount = ({stock, initial, addItem, item, qty}) => {
+import React, {useContext} from "react"
+
+const ItemCount = ({stock, initial, item, qty}) => {
         
         const [counter, setCounter] = React.useState(initial)
         const incrementar = () => {
@@ -12,6 +13,9 @@ const ItemCount = ({stock, initial, addItem, item, qty}) => {
             if (counter> initial)
             setCounter(counter - 1)
         }
+        const addItem = () => {
+            alert ("Agregado")
+        }
 
 
 
@@ -22,7 +26,7 @@ const ItemCount = ({stock, initial, addItem, item, qty}) => {
                 <p>Cantidad = {counter}</p>
                 <button className="btn btn-secondary me-2" onClick={incrementar}>+</button>
                 <button className="btn btn-secondary" onClick={decrementar}>-</button>
-                <button className="btn btn-secondary" onClick={()=>addItem(counter, item, qty)}>Agregar al Carrito</button>
+                <button className="btn btn-secondary" onClick={addItem}>Agregar al Carrito</button>
             </div>
         )
     }
